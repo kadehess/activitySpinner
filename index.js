@@ -183,7 +183,7 @@ function rotateFunction(){
     let title = document.createElement("li")
     let fetchId = recommendation.id
     title.id = "lipadding"
-    title.innerHTML = `<strong><font color="#892fe2">${recommendation.activity}</font></strong> | <strong>${recommendation.type}</strong> | <strong><font color="#892fe2">${recommendation.participants}</font><strong> `
+    title.innerHTML = `<strong><font color="#000000">${recommendation.activity}</font></strong> | <strong><font color="000000">${recommendation.type}</strong> | <strong><font color="#000000">${recommendation.participants}</font><strong> `
     //Delete activity button
     let deleteButton = document.createElement('button')
     deleteButton.innerText = "X"
