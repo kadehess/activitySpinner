@@ -3,8 +3,9 @@
     padding: 0;
     margin: 0;
     outline: none;
+    color:rgb(66, 19, 66)
   }
-  
+
   .gameInto,
   .gradient-border {
     text-align: center;
@@ -49,7 +50,7 @@
     align-items: center;
     height: 100vh;
     background-size: cover;
-    background: rgb(91, 91, 239);
+    background: rgb(170, 170, 245);
   }
   #page {
     padding-left: 20px;
@@ -236,4 +237,38 @@
   .deleteButton:hover {
     background-color: #ff0000;
     color: white;
+  }
+
+  .animate span{
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  .animate.backwards > span{
+    animation: animateBackwards 1s ease-in-out 
+  forwards;
+  color:#60f991
+  }
+  .animate.forwards > span{
+    animation: animateForwards 1s ease-in-out 
+  forwards;
+  color:#6ec3f7
+  }
+  .animate.mixed > span:nth-child(even){
+    animation: animateBackwards 1s ease-in-out 
+  forwards;
+  color:#f06ca3
+  }
+  .animate.mixed > span:nth-child(odd){
+    animation: animateForwards 1s ease-in-out 
+  forwards;
+  color:#f8a745
+  }
+  @keyframes animateForwards {
+    from { top: 0; transform: rotate(0deg); }
+    to { top: .9em; transform: rotate(-15deg); }
+  }
+  @keyframes animateBackwards {
+    from { top: 0; transform: rotate(0deg); }
+    to { top: 1em; transform: rotate(25deg); }
   }
